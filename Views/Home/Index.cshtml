@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<partial name="_Carousel">
+</partial>
+
+  <div class="col-md-4">
+    <div class="comment-section" style="max-height: 800px; overflow-y: scroll;">
+      <h5>Comments</h5>
+      <div class="comment">
+        <p><strong>Geko:</strong> Great picture!</p>
+      </div>
+      <div class="comment">
+        <p><strong>Saim:</strong> Love the colors in this one!</p>
+      </div>
+      <div class="comment-form">
+        <h6>Share your thoughts:</h6>
+        <textarea class="form-control" rows="3" placeholder="Write a comment..."></textarea>
+        <button class="btn btn-primary mt-2">Send</button>
+      </div>
+    </div>
+  </div>
+<div>
+    <p>Share your image, show us your creative side:</p>
+    <a asp-controller="Image" asp-action="Upload" class="btn btn-primary">Upload</a>
+</div>
+</div>

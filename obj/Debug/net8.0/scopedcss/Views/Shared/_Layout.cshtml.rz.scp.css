@@ -1,0 +1,109 @@
+/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+a.navbar-brand[b-3d2ra6rbe8] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+  color: white !important; 
+}
+
+a[b-3d2ra6rbe8] {
+  color: white; 
+}
+
+.btn-primary[b-3d2ra6rbe8] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-3d2ra6rbe8], .nav-pills .show > .nav-link[b-3d2ra6rbe8] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-3d2ra6rbe8] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-3d2ra6rbe8] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-3d2ra6rbe8] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-3d2ra6rbe8] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-3d2ra6rbe8] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
+
+.navbar[b-3d2ra6rbe8] {
+  background-color: lightgoldenrodyellow
+  !important;
+  border-bottom: none;
+}
+
+.carousel-caption[b-3d2ra6rbe8] {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  color: white;
+}
+
+.scrollable-comments[b-3d2ra6rbe8] {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.comment[b-3d2ra6rbe8] {
+  margin-bottom: 10px;
+}
+
+.add-comment textarea[b-3d2ra6rbe8] {
+  width: 100%;
+  height: 50px;
+  resize: none;
+}
+
+.scroll-container[b-3d2ra6rbe8] {
+  display: flex;
+  overflow-x: auto;
+  padding: 10px;
+  scrollbar-width: thin; 
+}
+
+.scroll-container[b-3d2ra6rbe8]::-webkit-scrollbar {
+  height: 8px; 
+}
+
+.scroll-container[b-3d2ra6rbe8]::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  border-radius: 10px;
+}
+
+.scroll-item[b-3d2ra6rbe8] {
+  flex: 0 0 auto; 
+  margin-right: 10px;
+  max-width: 300px; 
+}
+
+.image-card[b-3d2ra6rbe8] {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.image-card img[b-3d2ra6rbe8] {
+  width: 100%;
+  height: auto;
+}
