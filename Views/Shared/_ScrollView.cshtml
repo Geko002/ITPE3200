@@ -1,0 +1,56 @@
+@model PixNote.ViewModels.ImageDetailsViewModel
+
+<h2>PixNote: ScrollView</h2>
+
+@if (Model.Image != null && Model.Image.Any())
+{
+    <h3>Displaying images from PixNote</h3>
+    <div class="scroll-container">
+        @foreach (var image in Model.Image) 
+        {
+            <div class="scroll-item image-card">
+                <!-- Display image -->
+                <img src="@Url.Content(image.ImagePath)" alt="@image.Title" class="img-fluid">
+                
+                <!-- Debug: Show the actual image path being rendered -->
+                <p><strong>Image Path:</strong> @image.ImagePath</p>
+                
+                <div class="p-2">
+                    <h5>
+                        <a asp-controller="Image" asp-action="Details" asp-route-id="@image.ImageId">@image.Title</a>
+                    </h5>
+                    <p>@image.Description</p>
+                    <small>Uploaded on: @image.DateUploaded.ToString("g")</small>
+                </div>
+            </div>
+        }
+    </div>
+}
+else
+{
+    <p>No images available.</p>
+    <p>Still in progress</p>
+}
+
+<b>Comments:</b>
+<div class="comment-section" style="max-height: 800px; overflow-y: scroll;">
+    <div class="comment">
+        @foreach (var comment in Model.Comments)
+        {
+            <div class="comment">
+            <strong>@comment.User:</strong>
+            <p>@comment.CommentText</p>
+            <small>Posted on: @comment.CommentDate.ToString("g")</small>
+            </div>
+        }
+        <div class="comment-form">
+        <h6>Share your thoughts:</h6>
+        <textarea class="form-control" rows="2" placeholder="Write a comment..."></textarea>
+        </div>
+    </div> 
+
+
+
+<a href="@Url.Action("Index", "Home")" class="btn btn-secondary">Back To Slide View</a>
+<a href="@Url.Action("Upload", "Image")" class="btn btn-primary">Upload an image</a>
+<button class="btn btn-primary mt-2">Send Comment</button>
