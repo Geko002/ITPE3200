@@ -2534,19 +2534,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\asopa\\.nuget\\packages\\": {}
+    "C:\\Users\\ksaim\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\asopa\\OneDrive\\Skrivebord\\ITPE3200\\PixNote\\PixNote.csproj",
+      "projectUniqueName": "C:\\Users\\ksaim\\OneDrive\\Skrivebord\\PixNote\\PixNote\\ITPE3200\\PixNote.csproj",
       "projectName": "PixNote",
-      "projectPath": "C:\\Users\\asopa\\OneDrive\\Skrivebord\\ITPE3200\\PixNote\\PixNote.csproj",
-      "packagesPath": "C:\\Users\\asopa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\asopa\\OneDrive\\Skrivebord\\ITPE3200\\PixNote\\obj\\",
+      "projectPath": "C:\\Users\\ksaim\\OneDrive\\Skrivebord\\PixNote\\PixNote\\ITPE3200\\PixNote.csproj",
+      "packagesPath": "C:\\Users\\ksaim\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ksaim\\OneDrive\\Skrivebord\\PixNote\\PixNote\\ITPE3200\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\asopa\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\ksaim\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
