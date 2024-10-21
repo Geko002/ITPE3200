@@ -1,5 +1,7 @@
 @model PixNote.ViewModels.ImageUploadViewModel
-
+@{
+    ViewData["Title"] = "Upload Image";
+}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,33 +10,28 @@
     <title>Upload Image</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
 </head>
+
 <body>
-    <div class="container mt-5">
-        <h2>Upload Image</h2>
+    <h2>Upload Image</h2>
 
-        <form asp-action="Upload" enctype="multipart/form-data" method="post">
-            <div class="mb-3">
-                <label for="Title" class="form-label">Title</label>
-                <input type="text" class="form-control" id="Title" name="Title" required />
-                <span asp-validation-for="Title" class="text-danger"></span>
-            </div>
-
-            <div class="mb-3">
-                <label for="Description" class="form-label">Description</label>
-                <textarea class="form-control" id="Description" name="Description" required></textarea>
-                <span asp-validation-for="Description" class="text-danger"></span>
-            </div>
-
-            <div class="mb-3">
-                <label for="ImageFile" class="form-label">Choose Image</label>
-                <input type="file" class="form-control" id="ImageFile" name="ImageFile" accept="image/*" required />
-                <span asp-validation-for="ImageFile" class="text-danger"></span>
-            </div>
-
-            <button type="submit" class="btn btn-primary">Upload</button>
-        </form>
+   <form asp-action="Upload" enctype="multipart/form-data" method="post">
+    <div class="form-group">
+        <label for="title">Title:</label>
+        <input type="text" name="title" class="form-control" required />
     </div>
+    <div class="form-group">
+        <label for="description">Description:</label>
+        <textarea name="description" class="form-control" required></textarea>
+    </div>
+    <div class="form-group">
+        <label for="imageFile">Select Image:</label>
+        <input type="file" name="imageFile" class="form-control" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Upload</button>
+</form>
 
+<a href="@Url.Action("Index", "Image")" class="btn btn-secondary">Back to Images</a>
+    </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
 </body>

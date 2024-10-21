@@ -1,0 +1,5 @@
+@model PixNote.ViewModels.ImageUploadViewModel
+
+<a href="@Url.Action("Index", "Home")">Go to Home</a>
+<form asp-controller="Image" asp-action="Upload" method="post" enctype="multipart/form-data"> </form>
+@await Html.PartialAsync("_Upload") 

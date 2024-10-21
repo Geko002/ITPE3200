@@ -1,16 +1,19 @@
 using System.ComponentModel.DataAnnotations;
-
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal;
+using System.ComponentModel.DataAnnotations.Schema;
 namespace PixNote.ViewModels
 {
     public class ImageUploadViewModel
     {
-        [Required(ErrorMessage = "Title is required")]
+
+        [Required]
         public string Title { get; set; }
-
-        [Required(ErrorMessage = "Description is required")]
+        [Required]
         public string Description { get; set; }
-
-        [Required(ErrorMessage = "Please select an image file")]
-        public IFormFile ImageFile { get; set; }
+        public int UserId { get; set; } // UserId of the uploader
+        public string ImagePath { get; set; }     // Store the path for uploaded image
+        public DateTime DateUploaded { get; set; }
+        [Required]
+        public IFormFile imageFile { get; set; } // For file upload
     }
 }
