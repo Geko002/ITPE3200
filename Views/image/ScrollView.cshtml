@@ -1,6 +1,13 @@
 @model PixNote.ViewModels.ImageDetailsViewModel
 
 <a href="Home/Index"></a>
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["Message"]
+    </div>
+}
+
 
 <partial name="_ScrollView">
 </partial>
