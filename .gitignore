@@ -22,3 +22,6 @@ obj
 *.db
 *.db-wal
 *.db-shm
+
+    bin/Debug/net8.0/PixNote.dll
+        bin/Debug/net8.0/PixNote.exe
