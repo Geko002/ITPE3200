@@ -16,6 +16,6 @@ h2 {
   gap: 1em;
 }
 
-button {
-  margin-bottom: 1em;
+.Buttons {
+  text-align: center !important;
 }

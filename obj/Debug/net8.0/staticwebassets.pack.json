@@ -5,12 +5,20 @@
       "PackagePath": "staticwebassets\\PixNote.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\qasim\\OneDrive\\Desktop\\QasimNet\\ITPE3200\\wwwroot\\css\\Edit.css",
+      "PackagePath": "staticwebassets\\css\\Edit.css"
+    },
+    {
       "Id": "C:\\Users\\qasim\\OneDrive\\Desktop\\QasimNet\\ITPE3200\\wwwroot\\css\\Index.css",
       "PackagePath": "staticwebassets\\css\\Index.css"
     },
     {
       "Id": "C:\\Users\\qasim\\OneDrive\\Desktop\\QasimNet\\ITPE3200\\wwwroot\\css\\ScrollView.css",
       "PackagePath": "staticwebassets\\css\\ScrollView.css"
+    },
+    {
+      "Id": "C:\\Users\\qasim\\OneDrive\\Desktop\\QasimNet\\ITPE3200\\wwwroot\\css\\Upload.css",
+      "PackagePath": "staticwebassets\\css\\Upload.css"
     },
     {
       "Id": "C:\\Users\\qasim\\OneDrive\\Desktop\\QasimNet\\ITPE3200\\wwwroot\\css\\site.css",
@@ -37,8 +45,16 @@
       "PackagePath": "staticwebassets\\images\\6d36a24ba86063c5ea9c13b216e5d080.jpg"
     },
     {
+      "Id": "C:\\Users\\qasim\\OneDrive\\Desktop\\QasimNet\\ITPE3200\\wwwroot\\images\\Qasim.jpg",
+      "PackagePath": "staticwebassets\\images\\Qasim.jpg"
+    },
+    {
       "Id": "C:\\Users\\qasim\\OneDrive\\Desktop\\QasimNet\\ITPE3200\\wwwroot\\images\\Skjermbilde 2023-04-28 184827.png",
       "PackagePath": "staticwebassets\\images\\Skjermbilde 2023-04-28 184827.png"
+    },
+    {
+      "Id": "C:\\Users\\qasim\\OneDrive\\Desktop\\QasimNet\\ITPE3200\\wwwroot\\images\\VID-20210902-WA0000.mp4",
+      "PackagePath": "staticwebassets\\images\\VID-20210902-WA0000.mp4"
     },
     {
       "Id": "C:\\Users\\qasim\\OneDrive\\Desktop\\QasimNet\\ITPE3200\\wwwroot\\images\\berserk-red-moon-wallpaper-by-exoic-on-deviantart.png",
@@ -47,6 +63,10 @@
     {
       "Id": "C:\\Users\\qasim\\OneDrive\\Desktop\\QasimNet\\ITPE3200\\wwwroot\\images\\car.jpg",
       "PackagePath": "staticwebassets\\images\\car.jpg"
+    },
+    {
+      "Id": "C:\\Users\\qasim\\OneDrive\\Desktop\\QasimNet\\ITPE3200\\wwwroot\\images\\chickenleg.jpg",
+      "PackagePath": "staticwebassets\\images\\chickenleg.jpg"
     },
     {
       "Id": "C:\\Users\\qasim\\OneDrive\\Desktop\\QasimNet\\ITPE3200\\wwwroot\\images\\coke.jpg",
@@ -79,6 +99,10 @@
     {
       "Id": "C:\\Users\\qasim\\OneDrive\\Desktop\\QasimNet\\ITPE3200\\wwwroot\\images\\pizza.jpg",
       "PackagePath": "staticwebassets\\images\\pizza.jpg"
+    },
+    {
+      "Id": "C:\\Users\\qasim\\OneDrive\\Desktop\\QasimNet\\ITPE3200\\wwwroot\\images\\ribs.jpg",
+      "PackagePath": "staticwebassets\\images\\ribs.jpg"
     },
     {
       "Id": "C:\\Users\\qasim\\OneDrive\\Desktop\\QasimNet\\ITPE3200\\wwwroot\\images\\static-assets-upload14788945298143420077.webp",
