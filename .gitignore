@@ -1,4 +1,7 @@
 # Ignore build output
+
+**/bin/
+**/obj/
 bin/
 obj/
 obj
@@ -23,7 +26,6 @@ obj
 *.db-wal
 *.db-shm
 
-    bin/Debug/net8.0/PixNote.dll
-        bin/Debug/net8.0/PixNote.exe
-
-      obj/Debug/net8.0
+*.bin/Debug/net8.0/PixNote.dll
+*.bin/Debug/net8.0/PixNote.exe
+*.obj/Debug/net8.0
