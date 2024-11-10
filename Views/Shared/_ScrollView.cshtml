@@ -12,21 +12,20 @@
         {
             <div class="scroll-item image-card">
                 <h5>
-                        <a asp-controller="Image" asp-action="Details" asp-route-id="@image.ImageId">@image.Title</a>
+                    <a asp-controller="Image" asp-action="Details" asp-route-id="@image.ImageId">@image.Title</a>
                 </h5>
                 <!-- Display image -->
-                <img src="@Url.Content(image.ImagePath)" alt="@image.Title" class="img-fluid">
                 
-                <!-- Debug: Show the actual image path being rendered -->
-                <p><strong>Image Path:</strong> @image.ImagePath</p>
+                <img src="@Url.Content(image.ImagePath)" alt="@image.Title" class="imger">
                 
-                <div class="p-2">
+                <div class="py-4">
 
                     <p>@image.Description</p>
-                    <small>Uploaded on: @image.DateUploaded.ToString("g")</small>
+                    <small>(Uploaded on: @image.DateUploaded.ToString("g"))</small>
                 </div>
 
                 <!-- Edit Button -->
+                <div class="buttons">
                 <a asp-controller="Image" asp-action="Edit" asp-route-id="@image.ImageId" class="btn btn-success">Edit</a>
 
                 <!-- Delete Button -->
@@ -34,6 +33,29 @@
                     <input type="hidden" name="id" value="@image.ImageId" />
                     <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this image?');">Delete</button>
                 </form>
+                </div>
+
+        <div class="CommentsMain">
+        <b>Comments:</b>
+        <div class="comment-section">
+            <div class="comment">
+                @foreach (var comment in Model.Comments)
+                {
+                    <div class="comment">
+                    <strong>@comment.User:</strong>
+                    <p>@comment.CommentText</p>
+                    <small>Posted on: @comment.CommentDate.ToString("g")</small>
+                    </div>
+                }
+                <div class="comment-form">
+                <h6>Share your thoughts:</h6>
+                <input class="form-control" placeholder="Write a comment..."></input>
+                </div>
+            </div> 
+        </div>
+        <button class="btn btn-primary mt-4">Send Comment</button>
+
+            </div>
             </div>
         }
     </div>
@@ -43,27 +65,5 @@ else
     <p>No images available.</p>
     <p>Still in progress</p>
 }
-
-<b>Comments:</b>
-<div class="comment-section" style="max-height: 800px; overflow-y: scroll;">
-    <div class="comment">
-        @foreach (var comment in Model.Comments)
-        {
-            <div class="comment">
-            <strong>@comment.User:</strong>
-            <p>@comment.CommentText</p>
-            <small>Posted on: @comment.CommentDate.ToString("g")</small>
-            </div>
-        }
-        <div class="comment-form">
-        <h6>Share your thoughts:</h6>
-        <textarea class="form-control" rows="2" placeholder="Write a comment..."></textarea>
-        </div>
-    </div> 
-</div>
-
-<a href="@Url.Action("Upload", "Image")" class="btn btn-primary">Upload an image</a>
-<button class="btn btn-primary mt-2">Send Comment</button>
-</div>
 
 

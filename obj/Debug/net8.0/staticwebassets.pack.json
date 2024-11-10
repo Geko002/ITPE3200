@@ -5,12 +5,16 @@
       "PackagePath": "staticwebassets\\PixNote.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\qasim\\OneDrive\\Desktop\\QasimNet\\ITPE3200\\wwwroot\\css\\site.css",
-      "PackagePath": "staticwebassets\\css\\site.css"
+      "Id": "C:\\Users\\qasim\\OneDrive\\Desktop\\QasimNet\\ITPE3200\\wwwroot\\css\\Index.css",
+      "PackagePath": "staticwebassets\\css\\Index.css"
     },
     {
-      "Id": "C:\\Users\\qasim\\OneDrive\\Desktop\\QasimNet\\ITPE3200\\wwwroot\\css\\tot.css",
-      "PackagePath": "staticwebassets\\css\\tot.css"
+      "Id": "C:\\Users\\qasim\\OneDrive\\Desktop\\QasimNet\\ITPE3200\\wwwroot\\css\\ScrollView.css",
+      "PackagePath": "staticwebassets\\css\\ScrollView.css"
+    },
+    {
+      "Id": "C:\\Users\\qasim\\OneDrive\\Desktop\\QasimNet\\ITPE3200\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "C:\\Users\\qasim\\OneDrive\\Desktop\\QasimNet\\ITPE3200\\wwwroot\\favicon.ico",
@@ -29,10 +33,6 @@
       "PackagePath": "staticwebassets\\images\\3732572.webp"
     },
     {
-      "Id": "C:\\Users\\qasim\\OneDrive\\Desktop\\QasimNet\\ITPE3200\\wwwroot\\images\\6533232.webp",
-      "PackagePath": "staticwebassets\\images\\6533232.webp"
-    },
-    {
       "Id": "C:\\Users\\qasim\\OneDrive\\Desktop\\QasimNet\\ITPE3200\\wwwroot\\images\\6d36a24ba86063c5ea9c13b216e5d080.jpg",
       "PackagePath": "staticwebassets\\images\\6d36a24ba86063c5ea9c13b216e5d080.jpg"
     },
@@ -43,6 +43,10 @@
     {
       "Id": "C:\\Users\\qasim\\OneDrive\\Desktop\\QasimNet\\ITPE3200\\wwwroot\\images\\berserk-red-moon-wallpaper-by-exoic-on-deviantart.png",
       "PackagePath": "staticwebassets\\images\\berserk-red-moon-wallpaper-by-exoic-on-deviantart.png"
+    },
+    {
+      "Id": "C:\\Users\\qasim\\OneDrive\\Desktop\\QasimNet\\ITPE3200\\wwwroot\\images\\car.jpg",
+      "PackagePath": "staticwebassets\\images\\car.jpg"
     },
     {
       "Id": "C:\\Users\\qasim\\OneDrive\\Desktop\\QasimNet\\ITPE3200\\wwwroot\\images\\coke.jpg",
