@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ksaim\\OneDrive\\Skrivebord\\PixNote\\PixNote\\ITPE3200\\PixNote.csproj": {}
+    "C:\\Users\\qasim\\OneDrive\\Desktop\\test\\ITPE3200\\PixNote.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ksaim\\OneDrive\\Skrivebord\\PixNote\\PixNote\\ITPE3200\\PixNote.csproj": {
+    "C:\\Users\\qasim\\OneDrive\\Desktop\\test\\ITPE3200\\PixNote.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ksaim\\OneDrive\\Skrivebord\\PixNote\\PixNote\\ITPE3200\\PixNote.csproj",
+        "projectUniqueName": "C:\\Users\\qasim\\OneDrive\\Desktop\\test\\ITPE3200\\PixNote.csproj",
         "projectName": "PixNote",
-        "projectPath": "C:\\Users\\ksaim\\OneDrive\\Skrivebord\\PixNote\\PixNote\\ITPE3200\\PixNote.csproj",
-        "packagesPath": "C:\\Users\\ksaim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ksaim\\OneDrive\\Skrivebord\\PixNote\\PixNote\\ITPE3200\\obj\\",
+        "projectPath": "C:\\Users\\qasim\\OneDrive\\Desktop\\test\\ITPE3200\\PixNote.csproj",
+        "packagesPath": "C:\\Users\\qasim\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\qasim\\OneDrive\\Desktop\\test\\ITPE3200\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ksaim\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\qasim\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
