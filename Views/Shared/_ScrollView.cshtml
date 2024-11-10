@@ -1,14 +1,19 @@
 @model PixNote.ViewModels.ImageDetailsViewModel 
+<head><link rel="stylesheet" href="~/css/ScrollView.css"></head>
 
+<div class="ScrollviewMain">
 <h2>PixNote: ScrollView</h2>
 
 @if (Model.Image != null && Model.Image.Any())
 {
-    <h3>Displaying images from PixNote</h3>
+    
     <div class="scroll-container">
         @foreach (var image in Model.Image) 
         {
             <div class="scroll-item image-card">
+                <h5>
+                        <a asp-controller="Image" asp-action="Details" asp-route-id="@image.ImageId">@image.Title</a>
+                </h5>
                 <!-- Display image -->
                 <img src="@Url.Content(image.ImagePath)" alt="@image.Title" class="img-fluid">
                 
@@ -16,9 +21,7 @@
                 <p><strong>Image Path:</strong> @image.ImagePath</p>
                 
                 <div class="p-2">
-                    <h5>
-                        <a asp-controller="Image" asp-action="Details" asp-route-id="@image.ImageId">@image.Title</a>
-                    </h5>
+
                     <p>@image.Description</p>
                     <small>Uploaded on: @image.DateUploaded.ToString("g")</small>
                 </div>
@@ -59,7 +62,8 @@ else
     </div> 
 </div>
 
-<a href="@Url.Action("Index", "Home")" class="btn btn-secondary">Back To Slide View</a>
 <a href="@Url.Action("Upload", "Image")" class="btn btn-primary">Upload an image</a>
 <button class="btn btn-primary mt-2">Send Comment</button>
+</div>
+
 
