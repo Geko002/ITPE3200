@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using PixNote.Models;
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 
 builder.Services.AddDbContext<PhotoDbContext>(options => {
     options.UseSqlite(
