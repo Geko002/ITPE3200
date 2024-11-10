@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PixNote")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+88935f270d90485926fb6508af259bda43bcff6d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c3adadfa9e7e63f8c7f6bca1665df391fe3391a2")]
 [assembly: System.Reflection.AssemblyProductAttribute("PixNote")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PixNote")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

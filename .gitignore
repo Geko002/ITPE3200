@@ -1,0 +1,26 @@
+# Ignore build output
+bin/
+obj/
+
+# Ignore user-specific files
+*.suo
+*.user
+*.userprefs
+
+# Ignore Visual Studio temporary files
+*.vs/
+*.vscode/
+
+# Ignore compiled language files
+*.dll
+*.exe
+*.pdb
+*.cache
+
+# Ignore database files
+*.db
+*.db-wal
+*.db-shm
+
+# Ignore other config files
+*.json
