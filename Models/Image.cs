@@ -9,20 +9,20 @@ namespace PixNote.Models
         public int ImageId { get; set; }
         
         [Required]
-        public string Title { get; set; }
+        public string? Title { get; set; }
 
         [Required]
-        public string Description { get; set; }
+        public string? Description { get; set; }
 
-        public string ImagePath { get; set; }
+        public string? ImagePath { get; set; }
         public DateTime DateUploaded { get; set; }
 
     [NotMapped]
-       public IFormFile imageFile {get; set;}
+       public IFormFile? imageFile {get; set;}
 
         // Relation with user in a foreign key settlement
         public int UserId { get; set; } 
-        public User User { get; set; }
+        public User? User { get; set; }
 
         public ICollection<Comment> Comments { get; set; } = new List<Comment>();
     }

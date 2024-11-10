@@ -11,8 +11,11 @@ h2 {
 
 .FormMain {
   padding-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
-button {
-  margin-bottom: 1em;
+.Buttons {
+  text-align: center !important;
 }
