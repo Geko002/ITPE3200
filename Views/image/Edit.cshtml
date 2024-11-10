@@ -4,11 +4,10 @@
     <link rel="stylesheet" href="~/css/Edit.css">
 </head>
 <div class="EditMain">
-    <h2>Edit Image</h2>
 
-    <h2>Editing Image: @Model.Title</h2>
+    <h2>Edit Image: @Model.Title</h2>
 
-    <form asp-action="Edit" method="post">
+    <form asp-action="Edit" method="post" class="FormMain">
         <input type="hidden" asp-for="ImageId" />
         <div class="form-group">
             <label asp-for="Title"></label>
@@ -24,8 +23,11 @@
             <label>Current Image:</label><br />
             <img src="@Url.Content(Model.ImagePath)" alt="Current Image" style="max-width: 100%; height: auto;" />
         </div>
-        <button type="submit" class="btn btn-primary">Update</button>
+        <div class="buttons">
+            <button type="submit" class="btn btn-primary">Update</button>
+
+            <a href="@Url.Action("Index", "Image")" class="btn btn-secondary">Cancel</a>
+        </div>
     </form>
 
-    <a href="@Url.Action("Index", "Image")" class="btn btn-secondary">Cancel</a>
 </div>

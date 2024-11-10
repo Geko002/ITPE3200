@@ -17,9 +17,14 @@ h6 {
 
 .comment-section {
   padding: 1em;
-  border: 1px solid black;
+  border-radius: 12px;
+  border: 3px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(135deg, #ff7eb9, #ff65a3, #7afcff, #feff9c) border-box;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  margin-top: 1em;
+  border-radius: 2em;
   background-color: white;
-  border-radius: 1em;
 }
 
 .UploadMain {
@@ -27,8 +32,6 @@ h6 {
   display: grid;
   justify-content: center;
 }
-
-
 
 @keyframes lights {
   0% {
