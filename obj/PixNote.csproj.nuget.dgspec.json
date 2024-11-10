@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\qasim\\OneDrive\\Desktop\\test\\ITPE3200\\PixNote.csproj": {}
+    "C:\\Users\\qasim\\OneDrive\\Desktop\\QasimNet\\ITPE3200\\PixNote.csproj": {}
   },
   "projects": {
-    "C:\\Users\\qasim\\OneDrive\\Desktop\\test\\ITPE3200\\PixNote.csproj": {
+    "C:\\Users\\qasim\\OneDrive\\Desktop\\QasimNet\\ITPE3200\\PixNote.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\qasim\\OneDrive\\Desktop\\test\\ITPE3200\\PixNote.csproj",
+        "projectUniqueName": "C:\\Users\\qasim\\OneDrive\\Desktop\\QasimNet\\ITPE3200\\PixNote.csproj",
         "projectName": "PixNote",
-        "projectPath": "C:\\Users\\qasim\\OneDrive\\Desktop\\test\\ITPE3200\\PixNote.csproj",
+        "projectPath": "C:\\Users\\qasim\\OneDrive\\Desktop\\QasimNet\\ITPE3200\\PixNote.csproj",
         "packagesPath": "C:\\Users\\qasim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\qasim\\OneDrive\\Desktop\\test\\ITPE3200\\obj\\",
+        "outputPath": "C:\\Users\\qasim\\OneDrive\\Desktop\\QasimNet\\ITPE3200\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\qasim\\AppData\\Roaming\\NuGet\\NuGet.Config"

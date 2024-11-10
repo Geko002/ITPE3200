@@ -19,4 +19,10 @@ html {
 
 body {
   margin-bottom: 60px;
+  background-color: aliceblue;
+}
+
+.footerMain {
+  position: absolute;
+  bottom: 1em;
 }

@@ -25,7 +25,13 @@ a[b-3d2ra6rbe8] {
 
 .border-top[b-3d2ra6rbe8] {
   border-top: 1px solid #e5e5e5;
+
 }
+.footerMain[b-3d2ra6rbe8] {
+  position: absolute;
+  bottom: 1em;
+}
+
 .border-bottom[b-3d2ra6rbe8] {
   border-bottom: 1px solid #e5e5e5;
 }

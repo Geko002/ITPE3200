@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cSntKqg98Y0=",
+  "dgSpecHash": "5c4dzD9lqmg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\qasim\\OneDrive\\Desktop\\test\\ITPE3200\\PixNote.csproj",
+  "projectFilePath": "C:\\Users\\qasim\\OneDrive\\Desktop\\QasimNet\\ITPE3200\\PixNote.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\qasim\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\qasim\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\6.0.0\\microsoft.aspnetcore.mvc.razor.extensions.6.0.0.nupkg.sha512",
