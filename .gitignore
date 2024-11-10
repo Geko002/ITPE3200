@@ -26,5 +26,4 @@ obj
     bin/Debug/net8.0/PixNote.dll
         bin/Debug/net8.0/PixNote.exe
 
-        obj/Debug/net8.0/PixNote.AssemblyInfo.cs
-      obj/Debug/net8.0/PixNote.AssemblyInfoInputs.cache
+      obj/Debug/net8.0
