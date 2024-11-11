@@ -82,6 +82,7 @@ h1 {
   margin: auto;
   font-size: 4.5rem;
   font-weight: 300;
+  font-family: "Courier New", Courier, monospace;
   animation: lights 3s 750ms linear infinite;
   text-align: center;
 }
