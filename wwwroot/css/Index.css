@@ -36,6 +36,28 @@ h6 {
   justify-content: center;
 }
 
+.comment-form {
+  margin-top: 1em;
+}
+
+.comment p {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(40, end);
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
 @keyframes lights {
   0% {
     color: hsl(231, 89%, 49%);
