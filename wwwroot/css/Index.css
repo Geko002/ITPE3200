@@ -82,6 +82,6 @@ h1 {
   margin: auto;
   font-size: 4.5rem;
   font-weight: 300;
-  animation: lights 2s 750ms linear infinite;
+  animation: lights 3s 750ms linear infinite;
   text-align: center;
 }
