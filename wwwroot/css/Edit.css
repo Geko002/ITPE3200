@@ -1,6 +1,7 @@
 /** @format */
 
 .EditMain {
+  margin-top: 5em;
   display: flex;
   flex-direction: column;
   justify-content: center;
