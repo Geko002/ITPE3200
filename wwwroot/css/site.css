@@ -36,3 +36,8 @@ body {
 nav {
   background-color: black;
 }
+
+
+.logOutContainer {
+  margin: 10em;
+}

@@ -24,28 +24,30 @@
                             <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
 
-                        
+
                         <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-controller="Image" asp-action="Index" id="scrollViewButton">
-                               Scroll View
+                            <a class="nav-link text-light" asp-area="" asp-controller="Image" asp-action="Index"
+                                id="scrollViewButton">
+                                Scroll View
                             </a>
                         </li>
 
-                       
+
                         <li>
-                            <a asp-controller="Image" asp-action="Upload" class="nav-link text-light" id="uploadImageButton">
-                               Upload Image
+                            <a asp-controller="Image" asp-action="Upload" class="nav-link text-light"
+                                id="uploadImageButton">
+                                Upload Image
                             </a>
                         </li>
                     </ul>
 
-                    
+
                     <ul class="navbar-nav">
                         @if (User.Identity.IsAuthenticated)
                         {
                             <li class="nav-item">
                                 <span class="text-light">Greetings, @User.Identity.Name</span>
-                                <a class="btn btn-danger mt-2" asp-area="Identity" asp-page="/Account/Logout">Logout</a>
+                                <a class="btn btn-danger mx-2" asp-area="Identity" asp-page="/Account/Logout">Logout</a>
                             </li>
                         }
                         else
@@ -54,7 +56,8 @@
                                 <a class="btn btn-primary mt-2" asp-area="Identity" asp-page="/Account/Login">Login</a>
                             </li>
                             <li class="nav-item">
-                                <a class="btn btn-success mt-2" asp-area="Identity" asp-page="/Account/Register">Register</a>
+                                <a class="btn btn-success mt-2" asp-area="Identity"
+                                    asp-page="/Account/Register">Register</a>
                             </li>
                         }
                     </ul>
@@ -63,8 +66,8 @@
         </nav>
     </header>
 
-    <div class="container">
-        <main role="main" class="pb-3">
+    <div class="logOutContainer">
+        <main role="main" class="logout">
             @RenderBody()
         </main>
     </div>
@@ -79,10 +82,10 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
 
-   
+
     <script>
         $(document).ready(function () {
-          
+
             var isAuthenticated = '@User.Identity.IsAuthenticated'.toLowerCase();
 
             if (isAuthenticated === "false") {
@@ -98,4 +101,3 @@
 </body>
 
 </html>
-

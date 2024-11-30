@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Authorization;  
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -8,12 +8,12 @@ using PixNote.ViewModels;
 public class ImageController : Controller
 {
     private readonly PhotoDbContext _photoDbContext;
-    private readonly UserManager<User> _userManager; 
+    private readonly UserManager<User> _userManager;
 
     public ImageController(PhotoDbContext photoDbContext, UserManager<User> userManager)
     {
         _photoDbContext = photoDbContext;
-        _userManager = userManager; 
+        _userManager = userManager;
     }
 
     // Ensure the user is authenticated before accessing this action
@@ -32,7 +32,7 @@ public class ImageController : Controller
     public IActionResult Details(int id)
     {
         var image = _photoDbContext.Images.FirstOrDefault(i => i.ImageId == id);
-        
+
         if (image == null)
             return NotFound();
 
@@ -74,7 +74,7 @@ public class ImageController : Controller
                 Description = mod.Description,
                 ImagePath = $"/images/{mod.imageFile.FileName}",
                 DateUploaded = DateTime.Now,
-                UserId = user.Id 
+                UserId = user.Id
             };
 
             _photoDbContext.Images.Add(image);
@@ -91,7 +91,7 @@ public class ImageController : Controller
     public async Task<IActionResult> Delete(int id)
     {
         var image = await _photoDbContext.Images.FindAsync(id);
-        
+
         if (image == null)
             return NotFound();
 
@@ -108,7 +108,7 @@ public class ImageController : Controller
     public IActionResult Edit(int id)
     {
         var image = _photoDbContext.Images.FirstOrDefault(i => i.ImageId == id);
-        
+
         if (image == null)
             return NotFound();
 
@@ -132,7 +132,7 @@ public class ImageController : Controller
             return View(model);
 
         var image = await _photoDbContext.Images.FindAsync(model.ImageId);
-        
+
         if (image == null)
             return NotFound();
 
@@ -157,7 +157,7 @@ public class ImageController : Controller
                 {
                     ImageId = imageId,
                     CommentText = commentText,
-                    UserId = user.Id, 
+                    UserId = user.Id,
                     CommentDate = DateTime.Now
                 };
 
@@ -165,6 +165,7 @@ public class ImageController : Controller
                 await _photoDbContext.SaveChangesAsync();
             }
         }
+
 
         return RedirectToAction("Details", "Image", new { id = imageId });
     }
