@@ -11,7 +11,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light box-shadow fixed-top py-3">
+        <nav class="navbar navbar-expand-sm navbar-light box-shadow fixed-top py-3">
             <div class="container-fluid navbarMain">
                 <a class="navbar-brand text-light" asp-area="" asp-controller="Home" asp-action="Index">PixNote</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
@@ -23,18 +23,46 @@
                         <li class="nav-item">
                             <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
+
+                        
                         <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-controller="Image" asp-action="Index">Scroll
-                                View</a>
+                            <a class="nav-link text-light" asp-area="" asp-controller="Image" asp-action="Index" id="scrollViewButton">
+                               Scroll View
+                            </a>
                         </li>
+
+                       
                         <li>
-                            <a asp-controller="Image" asp-action="Upload" class="nav-link text-light">Upload image</a>
+                            <a asp-controller="Image" asp-action="Upload" class="nav-link text-light" id="uploadImageButton">
+                               Upload Image
+                            </a>
                         </li>
+                    </ul>
+
+                    
+                    <ul class="navbar-nav">
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item">
+                                <span class="text-light">Greetings, @User.Identity.Name</span>
+                                <a class="btn btn-danger mt-2" asp-area="Identity" asp-page="/Account/Logout">Logout</a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="btn btn-primary mt-2" asp-area="Identity" asp-page="/Account/Login">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn btn-success mt-2" asp-area="Identity" asp-page="/Account/Register">Register</a>
+                            </li>
+                        }
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
@@ -46,10 +74,28 @@
             &copy; 2024 - PixNote - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+
+   
+    <script>
+        $(document).ready(function () {
+          
+            var isAuthenticated = '@User.Identity.IsAuthenticated'.toLowerCase();
+
+            if (isAuthenticated === "false") {
+                $('#uploadImageButton').click(function (event) {
+                    event.preventDefault();
+                    alert("You must be logged in to upload an image.");
+                });
+            }
+        });
+    </script>
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 
 </html>
+

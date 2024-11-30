@@ -1,18 +1,10 @@
-using System;
-
+using Microsoft.AspNetCore.Identity;
+using PixNote.Data;
 namespace PixNote.Models
-
 {
-
- public class User
+    public class User : IdentityUser
     {
-        public int UserId { get; set; }
-        public string? Username { get; set; }
-        public string? Email { get; set; }
-
-        // Initialize collections to avoid null reference issues
-        public ICollection<Image> Images { get; set; } = new List<Image>();
-        public ICollection<Comment> Comments { get; set; } = new List<Comment>();
-       // public ICollection<Note> Notes { get; set; } = new List<Note>();
+        // Add additional properties here if needed
+       // public string FullName { get; set; }  // Example property
     }
 }
