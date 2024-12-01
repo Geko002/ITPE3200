@@ -173,6 +173,6 @@ public class ImageController : Controller
 #pragma warning restore CS8602 // Dereference of a possibly null reference.
 
 
-        return RedirectToAction("Details", "Image", new { id = imageId });
+        return RedirectToAction("Index", "Image", new { id = imageId });
     }
 }
