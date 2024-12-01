@@ -1,6 +1,6 @@
 @{
     ViewData["Title"] = "Home Page";
-    var hasImages = (bool)ViewData["HasImages"]; // Retrieve the value from ViewData
+  bool hasImages = ViewData["HasImages"] is bool value ? value : false; // Default to false if null
 }
 
 <head>

@@ -48,7 +48,9 @@ public class ImageService
         if (image == null) return false;
 
         // Delete image file from disk
+#pragma warning disable CS8604 // Possible null reference argument.
         var filePath = Path.Combine(_env.WebRootPath, "images", Path.GetFileName(image.ImagePath));
+#pragma warning restore CS8604 // Possible null reference argument.
         if (File.Exists(filePath))
         {
             File.Delete(filePath);

@@ -1,19 +1,21 @@
 @model PixNote.ViewModels.ImageDetailsViewModel
 
-<head><link rel="stylesheet" href="~/css/ScrollView.css"></head>
+<head>
+    <link rel="stylesheet" href="~/css/ScrollView.css">
+</head>
 
 <div class="ScrollviewMain">
     <h2>PixNote: ScrollView</h2>
 
-    
-    @if (User.Identity.IsAuthenticated)
+
+    @if (User.Identity != null && User.Identity.IsAuthenticated)
     {
-        
+
         <a href="@Url.Action("Upload", "Image")" class="btn btn-primary mt-4">Upload Image</a>
     }
     else
     {
-        
+
         <a href="/Identity/Account/Login" class="btn btn-primary mt-4">Upload Image (Login required)</a>
     }
 
@@ -32,19 +34,21 @@
                         <p>@image.Description</p>
                         <small>(Uploaded on: @image.DateUploaded.ToString("g"))</small><br />
 
-                        
+
                         <small>Uploaded by: @Model.ImageUploaderNames[image.ImageId]</small>
                     </div>
 
-                    
+
                     <div class="buttons">
-                        @if (User.Identity.IsAuthenticated)
+                        @if (User.Identity != null && User.Identity.IsAuthenticated)
                         {
-                            <a asp-controller="Image" asp-action="Edit" asp-route-id="@image.ImageId" class="btn btn-success">Edit</a>
+                            <a asp-controller="Image" asp-action="Edit" asp-route-id="@image.ImageId"
+                                class="btn btn-success">Edit</a>
 
                             <form asp-action="Delete" method="post" style="display:inline;">
                                 <input type="hidden" name="id" value="@image.ImageId" />
-                                <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this image?');">Delete</button>
+                                <button type="submit" class="btn btn-danger"
+                                    onclick="return confirm('Are you sure you want to delete this image?');">Delete</button>
                             </form>
                         }
                         else
@@ -53,7 +57,7 @@
                         }
                     </div>
 
-                    
+
                     <div class="CommentsMain">
                         <b>Comments:</b>
                         <div class="comment-section">
@@ -66,14 +70,15 @@
                                 </div>
                             }
 
-                            
-                            @if (User.Identity.IsAuthenticated)
+
+                            @if (User.Identity != null && User.Identity.IsAuthenticated)
                             {
                                 <div class="comment-form">
                                     <h6>Share your thoughts:</h6>
                                     <form method="post" asp-controller="Image" asp-action="AddComment">
                                         <input type="hidden" name="ImageId" value="@image.ImageId" />
-                                        <textarea name="CommentText" class="form-control" placeholder="Write a comment..." required></textarea><br />
+                                        <textarea name="CommentText" class="form-control" placeholder="Write a comment..."
+                                            required></textarea><br />
                                         <button type="submit" class="btn btn-primary">Send Comment</button>
                                     </form>
                                 </div>
