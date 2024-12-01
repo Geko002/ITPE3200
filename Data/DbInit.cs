@@ -37,6 +37,7 @@ namespace PixNote.Data
             if (!context.Images.Any())
             {
                 var user = await userManager.FindByEmailAsync("admin@pixnote.com");
+#pragma warning disable CS8602 // Dereference of a possibly null reference.
                 var image = new Image
                 {
                     Title = "Sample Image",
@@ -45,6 +46,7 @@ namespace PixNote.Data
                     DateUploaded = DateTime.Now,
                     UserId = user.Id
                 };
+#pragma warning restore CS8602 // Dereference of a possibly null reference.
 
                 context.Images.Add(image);
 

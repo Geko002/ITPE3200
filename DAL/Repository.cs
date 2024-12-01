@@ -33,6 +33,11 @@ namespace PixNote.DAL
     }
 
     public async Task SaveAsync() => await _context.SaveChangesAsync();
-}
+
+        public Task Update(T entity)
+        {
+            throw new NotImplementedException();
+        }
+    }
 
 }

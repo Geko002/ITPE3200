@@ -68,6 +68,8 @@ public class ImageController : Controller
             // Get the currently logged-in user
             var user = await _userManager.GetUserAsync(User);
 
+#pragma warning disable CS8602 // Dereference of a possibly null reference.
+#pragma warning disable CS8601 // Possible null reference assignment.
             var image = new Image
             {
                 Title = mod.Title,
@@ -76,6 +78,8 @@ public class ImageController : Controller
                 DateUploaded = DateTime.Now,
                 UserId = user.Id
             };
+#pragma warning restore CS8601 // Possible null reference assignment.
+#pragma warning restore CS8602 // Dereference of a possibly null reference.
 
             _photoDbContext.Images.Add(image);
             await _photoDbContext.SaveChangesAsync();
@@ -147,6 +151,7 @@ public class ImageController : Controller
     [HttpPost]
     public async Task<IActionResult> AddComment(int imageId, string commentText)
     {
+#pragma warning disable CS8602 // Dereference of a possibly null reference.
         if (User.Identity.IsAuthenticated)
         {
             var user = await _userManager.GetUserAsync(User);
@@ -165,6 +170,7 @@ public class ImageController : Controller
                 await _photoDbContext.SaveChangesAsync();
             }
         }
+#pragma warning restore CS8602 // Dereference of a possibly null reference.
 
 
         return RedirectToAction("Details", "Image", new { id = imageId });
