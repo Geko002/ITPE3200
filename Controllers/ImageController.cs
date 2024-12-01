@@ -167,6 +167,6 @@ public class ImageController : Controller
         }
 
 
-        return RedirectToAction("Details", "Image", new { id = imageId });
+        return RedirectToAction("Index", "Image", new { id = imageId });
     }
 }
